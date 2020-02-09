@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        ul {
+                width:100%;
+                height:70px;
+                text-align:center;
+            
+            }
+        li {
+                display:inline-block;
+                color:white;
+                margin-right:40px;
+                margin-top: 20px
+            }
+            a:hover {
+                  color: red;
+                }
+                  
+.cover {
+    width: 100%;
+    height: 450px;
+    padding: 50px;
+    background-image: url(res/dev.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 87px;
+    box-shadow: 0 3px 2px rgba(0, 0, 0, .5);
+    box-sizing: border-box;
+}
+.cover .heading {
+    font-size: 6em;
+    font-family: 'Bree Serif', serif;
+    color: black;
+    position: relative;
+    top: 40%;
+    text-shadow: 5px 2px rgb(12, 11, 11);
+    margin: 30px 0 40px 500px;
+}                
+     
+        .course1 {
+        width: 250px;
+        height: 250px;
+        margin-left: 50px;
+        display: inline-block;
+        background-image: url(res/images2.jpg);
+        background-size: cover;
+         overflow: hidden;
+        }
+        .course1:hover{
+        background-color:black;
+        opacity: 0.5;
+        }
+        .btnCourses1{
+        margin-top:120px;
+        display:none;
+        }
+        .course2 {
+        width: 250px;
+        height: 250px;
+        margin-left: 50px;
+        display: inline-block;
+        background-image: url(res/images3.jpg);
+        background-size: cover;
+        overflow: hidden;
+        }
+        .course2:hover{
+        background-color:black;
+        opacity: 0.5;
+        }
+        .btnCourses2{
+        margin-top:120px;
+        display:none;
+        }
+        .course3{
+        width: 250px;
+        height: 250px;
+        margin-left: 50px;
+        display: inline-block;
+        background-image: url(res/image1.jpg);
+        background-size: cover;
+        overflow: hidden;
+        }
+        .course3:hover{
+        background-color:black;
+        opacity: 0.5;
+        }
+        .btnCourses3{
+        margin-top:120px;
+        display:none;
+        }
+        .btnCourses1Hover{
+        display:inline !important;
+        opacity: 1 !important;
+        }
+        .h2, h2 {
+    font-size: 30px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.1;
+    color: white;
+}
+button, input, select, textarea {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    overflow: visible;
+    color: inherit;
+    font: inherit;
+    margin: 0;
+    box-sizing: border-box;
+    text-rendering: auto;
+    color: buttontext;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: center;
+    align-items: flex-start;
+    cursor: default;
+    background-color: buttonface;
+    box-sizing: border-box;
+    margin: 0em;
+    font: 400 13.3333px Arial;
+    padding: 1px 6px;
+    border-width: 2px;
+    border-style: outset;
+    border-color: buttonface;
+    border-image: initial;
+}
+
+.course1:hover .btnCourses1 {
+     display:inline !important;
+    opacity: 1 !important;
+}
+.course2:hover .btnCourses1 {
+     display:inline !important;
+    opacity: 1 !important;
+}
+.course3:hover .btnCourses1 {
+     display:inline !important;
+    opacity: 1 !important;
+}
+
+</style>
+</head>
+
+<body>
+   
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          
+        </ul>
+
+        
+        
+        <div class= "cover">
+                <h1 class="heading">COURSES</h1>
+        </div>
+
+        <div align="center"> 
+                <div class="course2">
+                        <button class="btnCourses1">View more</button>
+                </div>
+        
+                <div class="course1">
+                        <button class="btnCourses1">View more</button>
+                </div>
+            
+                <div class="course3">
+                        <button class="btnCourses1">View more</button>
+                </div>
+        <div align="center">        
+                <div class="course1">
+                        <button class="btnCourses1">View more</button>
+                </div>
+        
+                <div class="course3">
+                        <button class="btnCourses1">View more</button>
+                </div>
+            
+                <div class="course2">
+                        <button class="btnCourses1">View more</button>
+                </div>
+        <div align="center"> 
+                <div class="course2">
+                        <button class="btnCourses1">View more</button>
+                </div>
+        
+                <div class="course1">
+                        <button class="btnCourses1">View more</button>
+                </div>
+            
+                <div class="course3">
+                        <button class="btnCourses1">View more</button>
+                </div>
+        </div>
+
+                <body style="background-color:darkred;">   
+                        
+                        
+        <div class="form-group" style="width:500px !important">
+                <label for="exampleFormControlTextarea1">                
+                               
+                <h2>Feedback</h2>
+        </label>
+                         
+        <br>
+
+        <button onclick="makeBold()">B</button>
+        <button onclick="makeItalic()">I</button>
+        <button onclick="makeUnderline()">Underline</button>
+        <select id="size" onchange="changeSize">
+                <option>
+                        20px
+                </option>
+
+                <option>
+                        30px
+                </option>
+
+                <option>
+                        40px
+                </option>
+
+        </select>
+        <select id="police" onchange="changePolice()">
+        
+        <option>
+                Arial
+        </option>
+
+        <option>
+                Verdana
+        </option>
+
+        <option>
+                Geneva
+        </option>
+
+        </select>
+        <br>
+        <br>
+        <textarea class="form-control" id="mytext" rows="3"></textarea>
+
+</div> 
+</div> 
+</body>
+
+</html>
